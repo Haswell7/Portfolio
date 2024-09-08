@@ -1661,7 +1661,7 @@ footer > p {
 
     header {
         justify-content: space-between;
-        min-height: 80svh;
+        min-height: 75svh;
         text-align: center;
     }
 
@@ -1803,6 +1803,11 @@ footer > p {
 
     .tag p {
         font-weight: 600;
+    }
+
+    #secondary-contact {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .button-box {
