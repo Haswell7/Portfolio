@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rectangle</title>
+    <defs>
+        <linearGradient x1="0.946941242%" y1="0.946941242%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#E69500" offset="0%"></stop>
+            <stop stop-color="#E67400" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Cose" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-516, -341)" stroke="url(#linearGradient-1)">
+            <rect id="Rectangle" x="516.5" y="341.5" width="99" height="99" rx="16"></rect>
+        </g>
+    </g>
+</svg>

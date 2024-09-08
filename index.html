@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090D12">
+    <title>Carmine Otranto</title>
+    <meta name="description" content="Realizzo Siti Web e Applicazioni per liberi professionisti e aziende. Mi occupo del prodotto dalla progettazione alla sua distribuzione, fornendo un servizio comodo e completo">
+    <link rel="shortcut icon" href="./assets/logos/Logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <nav class="container-fluid frosted">
+        <div>
+            <a class="logo" href="#home" aria-label="Scroll page to Home">
+                <img src="./assets/logos/Logo.svg" alt="personal logo">
+                <p>Carmine Otranto</p>
+            </a>
+            <ul>
+                <li><a href="#home" id="home-link" class="active" ontouchstart="">Home</a></li>
+                <li><a href="#services" id="services-link" ontouchstart="">Servizi</a></li>
+                <li><a href="#portfolio" id="portfolio-link" ontouchstart="">Portfolio</a></li>
+                <li><a href="#about" id="about-link" ontouchstart="">Su di me</a></li>
+                <li><a href="#contact" id="contact-link" ontouchstart="">Contatti</a></li>
+            </ul>
+            <a class="cta primary" href="#contact" ontouchstart="">Contattami</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- Landing page -->
+        <div id="home" class="row">
+            <header class="col-12">
+                <div id="intestazione" class="col-12 col-lg-10">
+                    <div>
+                        <p class="hidden top-to-bottom">Mi chiamo</p>
+                        <h1></h1>
+                        <noscript>
+                            <h1>Carmine Otranto,<br><span class="text-gradient">Sviluppatore Web</span> e <span class="text-gradient">Mobile</span></h1>
+                        </noscript>
+                    </div>
+                    <p class="col-12 col-lg-8 hidden left-to-right">Realizzo Siti Web e Applicazioni per liberi professionisti e aziende. Mi occupo del prodotto dalla progettazione alla sua distribuzione, fornendo un servizio comodo e completo</p>
+                </div>
+                <div id="home-buttons" class="col-12 col-lg-8 hidden bottom-to-top">
+                    <a class="cta secondary" href="#services" ontouchstart="">I miei servizi</a>
+                    <a class="cta primary" href="#contact" ontouchstart="">Vuoi assumermi?</a>
+                </div>
+            </header>
+            <img src="./assets/logos/Logo.svg" alt="landing page logo background" class="col-10 col-lg-7 hidden right-to-left">
+            <div id="scroll-hint" class="col-12">
+                <img src="./assets/icons/Chevron-down-40.svg" alt="arrow down icon">
+                <p><small>Vuoi saperne di più? Scorri verso il basso</small></p>
+            </div>
+        </div>
+
+        <main>
+            <!-- Services section -->
+            <section id="services">
+                <div class="row">
+                    <div class="section-header hidden top-to-bottom">
+                        <p><span>Servizi</span></p>
+                        <div>
+                            <h2>I miei servizi</h2>
+                            <p class="subheading">Di cosa mi occupo e cosa posso offrire ai miei clienti</p>
+                        </div>
+                    </div>
+                </div>
+               <div class="row">
+                    <div id="service-path-container" class="col-1">
+                        <div id="service-path"></div>
+                    </div>
+                    <ul id="service-content" class="col-11 col-lg-12">
+                        <li id="first-service">
+                            <div class="row service-head">
+                                <div class="col-1"></div>
+                                <div class="col-10 service-title-container">
+                                    <!--SVG-->
+                                    <div class="path-container">
+                                        <svg id="first" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                            <defs>
+                                                <filter id="blur">
+                                                    <feGaussianBlur in="SourceGraphic" stdDeviation="0.5" />
+                                                </filter>
+                                                <linearGradient id="gradient" x1="100%" x2="0%" y1="0%" y2="100%">
+                                                    <stop offset="0%" stop-color="#E67400"></stop>
+                                                    <stop offset="100%" stop-color="#B55D3F"></stop>
+                                                </linearGradient>
+                                            </defs>
+                                            <g>
+                                                <polyline points="100 50,0 50, 0 100" stroke="url(#gradient)" filter="url(#blur)" vector-effect="non-scaling-stroke" />
+                                                <polyline points="100 50,0 50, 0 100" stroke="url(#gradient)" vector-effect="non-scaling-stroke" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <!---->
+                                    <div class="service-title hidden">
+                                        <img src="./assets/icons/angular_braces.svg" alt="angular braces icon" class="big-icon">
+                                        <h3>Websites</h3>
+                                    </div>
+                                    <div style="width: 100%"></div>
+                                </div>
+                                <div class="col-1"></div>
+                            </div>
+                            <div class="row service">
+                                <h3 class="hidden left-to-right">Sviluppo <span class="gradient-1">Siti Web</span></h3>
+                                <div class="col-12 col-lg-6">
+                                    <ul id="triple-card">
+                                        <li class="frosted bordered carda small-card hidden left-to-right">
+                                            <img src="./assets/images/javascript-code.svg" alt="Javascript code" class="code">
+                                            <img src="./assets/logos/Javascript_logo.svg" alt="Javascript logo" class="background-logo">
+                                        </li>
+                                        <li class="frosted bordered carda small-card hidden left-to-right">
+                                            <img src="./assets/images/css-code.svg" alt="CSS code" class="code">
+                                            <img src="./assets/logos/CSS3_logo.svg" alt="CSS logo" class="background-logo">
+                                        </li>
+                                        <li class="frosted bordered carda small-card hidden left-to-right">
+                                            <img src="./assets/images/html-code.svg" alt="HTML code" class="code">
+                                            <img src="./assets/logos/HTML5_Badge.svg" alt="HTML logo" class="background-logo">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-lg-6 service-description-container">
+                                    <img src="./assets/icons/angular_braces.svg" alt="angular braces icon background" class="hidden">
+                                    <div class="service-description hidden right-to-left">
+                                        <h4>Sviluppo <span class="gradient-1">Siti Web</span></h4>
+                                        <p>Sono uno sviluppatore <span class="gradient-1">Full-stack</span>, mi occupo sia della parte del sito con cui interagisce l’utente, sia della sua logica dietro le quinte. Sviluppo siti web che spaziano dalle più comuni e semplici <span class="gradient-1">Landing Page</span> alle più complesse <span class="gradient-1">Web Application</span></p>
+                                    </div>
+                                     <div class="service-technologies hidden bottom-to-top">
+                                        <p><span>Le tecnologie che utilizzo:</span></p>
+                                        <ul>
+                                            <li><img src="./assets/logos/HTML5_Badge.svg" alt="HTML 5 logo" class="icon"></li>
+                                            <li><img src="./assets/logos/CSS3_logo.svg" alt="CSS 3 logo" class="icon"></li>
+                                            <li><img src="./assets/logos/Javascript_logo.svg" alt="Javascript logo" class="icon"></li>
+                                            <li><img src="./assets/logos/nodejsStackedLight.svg" alt="Node js logo" class="icon"></li>
+                                            <li><img src="./assets/logos/Java_logo.svg" alt="Java logo" class="icon"></li>
+                                            <li><img src="./assets/logos/spring.svg" alt="Spring Boot logo" class="icon"></li>
+                                            <li><img src="./assets/logos/React_logo.svg" alt="React logo" class="icon"></li>
+                                            <li><img src="./assets/logos/angular.svg" alt="Angular logo" class="icon"></li>
+                                            <li><img src="./assets/logos/bootstrap-solid.svg" alt="Bootstrap logo" class="icon"></li>
+                                            <li><img src="./assets/logos/PostgreSQL_logo.3colors.svg" alt="PostgreSQL logo" class="icon"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="second-service">
+                            <div class="row service-head">
+                                <div class="col-1"></div>
+                                <div class="col-10 service-title-container">
+                                    <!--SVG-->
+                                    <div class="path-container">
+                                        <svg id="second" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                            <defs>
+                                                <filter id="blur2">
+                                                    <feGaussianBlur in="SourceGraphic" stdDeviation="0.5" />
+                                                </filter>
+                                                <linearGradient id="gradient2" x1="0%" x2="100%" y1="0%" y2="100%">
+                                                    <stop offset="0%" stop-color="#B55D3F"></stop>
+                                                    <stop offset="100%" stop-color="#87487C"></stop>
+                                                </linearGradient>
+                                            </defs>
+                                            <g>
+                                                <polyline points="0 0,0 50, 100 50" stroke="url(#gradient2)" filter="url(#blur2)" vector-effect="non-scaling-stroke" />
+                                                <polyline points="0 0,0 50, 100 50" stroke="url(#gradient2)" vector-effect="non-scaling-stroke" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <!---->
+                                    <div class="service-title hidden">
+                                        <img src="./assets/icons/curly_braces.svg" alt="curly braces icon" class="big-icon">
+                                        <h3>Mobile</h3>
+                                    </div>
+                                    <!--SVG-->
+                                    <div class="path-container">
+                                        <svg id="third" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                            <defs>
+                                                <filter id="blur3">
+                                                    <feGaussianBlur in="SourceGraphic" stdDeviation="0.5" />
+                                                </filter>
+                                                <linearGradient id="gradient3" x1="0%" x2="100%" y1="0%" y2="100%">
+                                                    <stop offset="0%" stop-color="#87487C"></stop>
+                                                    <stop offset="100%" stop-color="#593F9C"></stop>
+                                                </linearGradient>
+                                            </defs>
+                                            <g>
+                                                <polyline points="0 50,100 50, 100 100" stroke="url(#gradient3)" filter="url(#blur3)" vector-effect="non-scaling-stroke" />
+                                                <polyline points="0 50,100 50, 100 100" stroke="url(#gradient3)" vector-effect="non-scaling-stroke" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <!---->
+                                </div>
+                                <div class="col-1"></div>
+                            </div>
+                            <div class="row service">
+                                <h3 class="hidden left-to-right">Sviluppo <span class="gradient-2">App per Mobile</span></h3>
+                                <div class="col-12 col-lg-6 order-lg-2 service-card hidden">
+                                    <div class="frosted bordered carda">
+                                        <img src="./assets/images/swift-code.svg" alt="Swift code" class="code">
+                                        <img src="./assets/logos/Swift_logo_color.svg" alt="Swift logo" class="background-logo">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6 order-lg-1 service-description-container">
+                                    <img src="./assets/icons/curly_braces.svg" alt="curly braces icon background" class="hidden">
+                                    <div class="service-description hidden">
+                                        <h4>Sviluppo <span class="gradient-2">App per Mobile</span></h4>
+                                        <p>Mi occupo anche di sviluppare <span class="gradient-2">app native</span> per mobile, in particolare per le piattaforme Apple (<span class="gradient-2">iOS, iPadOS</span>) utilizzando le <span class="gradient-2">tecnologie più recenti e moderne</span></p>
+                                    </div>
+                                    <div class="service-technologies hidden bottom-to-top">
+                                        <p><span>Le tecnologie che utilizzo:</span></p>
+                                        <ul>
+                                            <li><img src="./assets/logos/Swift_logo_color.svg" alt="Swift logo" class="icon"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="third-service">
+                            <div class="row service-head">
+                                <div class="col-1"></div>
+                                <div class="col-10 service-title-container">
+                                    <!--SVG-->
+                                    <div class="path-container">
+                                        <svg id="fifth" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                            <defs>
+                                                <filter id="blur4">
+                                                    <feGaussianBlur in="SourceGraphic" stdDeviation="0.5" />
+                                                </filter>
+                                                <linearGradient id="gradient4" x1="100%" x2="0%" y1="0%" y2="100%">
+                                                    <stop offset="0%" stop-color="#2C439F"></stop>
+                                                    <stop offset="100%" stop-color="#0048A1"></stop>
+                                                </linearGradient>
+                                            </defs>
+                                            <g>
+                                                <polyline points="100 50,0 50, 0 100" stroke="url(#gradient4)" filter="url(#blur4)" vector-effect="non-scaling-stroke" />
+                                                <polyline points="100 50,0 50, 0 100" stroke="url(#gradient4)" vector-effect="non-scaling-stroke" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <!---->
+                                    <div class="service-title hidden">
+                                        <img src="./assets/icons/pen.svg" alt="pencil icon" class="big-icon">
+                                        <h3>Design</h3>
+                                    </div>
+                                    <!--SVG-->
+                                    <div class="path-container">
+                                        <svg id="fourth" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                            <defs>
+                                                <filter id="blur5">
+                                                    <feGaussianBlur in="SourceGraphic" stdDeviation="0.5" />
+                                                </filter>
+                                                <linearGradient id="gradient5" x1="100%" x2="0%" y1="0%" y2="100%">
+                                                    <stop offset="0%" stop-color="#593F9C"></stop>
+                                                    <stop offset="100%" stop-color="#2C439F"></stop>
+                                                </linearGradient>
+                                            </defs>
+                                            <g>
+                                                <polyline points="100 0,100 50, 0 50" stroke="url(#gradient5)" filter="url(#blur5)" vector-effect="non-scaling-stroke" />
+                                                <polyline points="100 0,100 50, 0 50" stroke="url(#gradient5)" vector-effect="non-scaling-stroke" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <!---->
+                                </div>
+                                <div class="col-1"></div>
+                            </div>
+                            <div class="row service">
+                                <h3 class="hidden left-to-right">...e mi occupo di <span class="gradient-3">Design</span></h3>
+                                <div class="col-12 col-lg-6 service-card hidden left-to-right">
+                                    <div class="frosted bordered carda">
+                                        <img src="./assets/images/design.webp" alt="design process" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6 service-description-container">
+                                    <img src="./assets/icons/pen.svg" alt="pencil icon background" class="hidden">
+                                    <div class="service-description hidden right-to-left">
+                                        <h4>...e mi occupo di <span class="gradient-3">Design</span></h4>
+                                        <p>La <span class="gradient-3">comodità</span> di affidare il ciclo di vita completo di un prodotto ad un singolo professionista è innegabile. Per questo motivo offro anche la possibilità di occuparmene dalle sue fasi iniziali di <span class="gradient-3">progettazione</span> alla sua distribuzione</p>
+                                    </div>
+                                    <div class="service-technologies hidden bottom-to-top">
+                                        <p><span>Gli strumenti che utilizzo:</span></p>
+                                        <ul>
+                                            <li><img src="./assets/logos/Figma-Icon.svg" alt="Figma logo" class="icon"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+               </div>
+            </section>
+    
+            <!-- Portfolio section -->
+            <section id="portfolio">
+                <div class="section-header hidden top-to-bottom">
+                    <p><span>Portfolio</span></p>
+                    <div>
+                        <h2>I miei lavori</h2>
+                        <p class="subheading">Alcuni dei progetti a cui ho lavorato di recente</p>
+                    </div>
+                </div>
+                <ul class="row">
+                    <li class="col-12 col-md-6 col-xxl-4 hidden bottom-to-top">
+                        <div class="project-image-container">
+                            <img src="./assets/images/portfolio-thumbnail.png" alt="portfolio project thumbnail">
+                        </div>
+                        <div class="project-details">
+                            <div class="project-description">
+                                <div>
+                                    <h3>Portfolio</h3>
+                                    <div class="tag new">
+                                        <p>Novità</p>
+                                    </div>
+                                </div>
+                                <p><small>Il mio primo progetto nonché sito web personale in cui spiego chi sono, cosa faccio, presento i miei lavori e fornisco i miei contatti</small></p>
+                            </div>
+                            <div class="links">
+                                <a href="" target="_blank" rel="noreferrer noopener" class="tertiary" ontouchstart="">Link al sito</a>
+                                <a href="https://github.com/Haswell7/Portfolio" target="_blank" rel="noreferrer noopener" class="underlined" ontouchstart="">Link a GitHub</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-6 col-xxl-4 hidden bottom-to-top">
+                        <div class="project-image-container">
+                            <img src="./assets/images/gym-tracker-thumbnail.png" alt="gym tracker project thumbnail">
+                        </div>
+                         <div class="project-details">
+                            <div class="project-description">
+                                <div>
+                                    <h3>Gym Tracker</h3>
+                                    <div class="tag working-on">
+                                        <p>Prossimamente</p>
+                                    </div>
+                                </div>
+                                <p><small>Un'applicazione iOS utile a tenere traccia dei propri allenamenti e dei propri progressi</small></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="d-none d-xxl-block col-xxl-4 hidden bottom-to-top">
+                         <div class="project-details">
+                            <div class="project-description">
+                                <div>
+                                    <h3>C'è dell'altro in arrivo...</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+    
+            <!-- About section -->
+            <section id="about">
+                <div class="section-header hidden top-to-bottom">
+                    <p><span>Su di me</span></p>
+                    <div>
+                        <h2>Conosciamoci</h2>
+                        <p class="subheading">Per conoscermi meglio, come professionista e come persona</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="about-info" class="col-8 col-sm-6 col-md-4 col-lg-3 hidden">
+                        <div class="frosted bordered-circle">
+                            <img src="./assets/images/profile-picture.webp" alt="profile picture">
+                        </div>
+                        <div>
+                            <p id="info-name">Carmine Otranto</p>
+                            <p>Sviluppatore</p>
+                        </div>
+                        <ul class="social-links">
+                            <li><a href="https://www.instagram.com/carmine.otranto/" target="_blank" rel="noreferrer noopener" aria-label="Link to Instagram"><img src="./assets/social/Instagram_Glyph_White.svg" alt="Instagram logo" class="icon" ontouchstart=""></a></li>
+                            <li><a href="https://github.com/Haswell7" target="_blank" rel="noreferrer noopener" aria-label="Link to GitHub"><img src="./assets/social/github-mark-white.svg" alt="GitHub logo" class="icon" ontouchstart=""></a></li>
+                            <li><a href="https://www.linkedin.com/in/carmine-otranto" target="_blank" rel="noreferrer noopener" aria-label="Link to LinkedIn"><img src="./assets/social/In-White-40.png" alt="LinkedIn logo" class="icon" ontouchstart=""></a></li>
+                        </ul>
+                    </div>
+                    <div id="about-description" class="col-12 col-xl-8 order-2 order-xl-1 hidden">
+                        <div id="history" class="about-content">
+                            <img src="./assets/icons/account.svg" alt="background account man icon">
+                            <div>
+                                <h3>Chi sono</h3>
+                                <div class="about-content-description">
+                                    <p>Sono <span class="text-gradient">Carmine</span>, ho 25 anni e sono uno <span class="text-gradient">sviluppatore freelance</span></p>
+                                    <p><span class="text-gradient">Aiuto aziende e liberi professionisti</span> a realizzare le loro idee, che siano siti web, applicazioni per mobile o anche sistemi più complessi</p> 
+                                    <p><span class="text-gradient">Collaboro</span> anche con altri sviluppatori e designer come risorsa esterna per dare vita ai prodotti dei loro clienti</p>
+                                    <p><span class="text-gradient">Professionalità</span>, <span class="text-gradient">dedizione</span> e <span class="text-gradient">perseveranza</span> sono tutte qualità che mi appartengono e che mi permettono di soddisfare le aspettative dei miei clienti a cui tengo particolarmente</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="education" class="about-content">
+                            <img src="./assets/icons/book.svg" alt="background book icon">
+                            <div>
+                                <h3>I miei studi</h3>
+                                <div class="about-content-description">
+                                    <p>Agli inizi del 2024, dopo anni di studi all’Università della Calabria nel corso di Ingegneria Informatica, ho deciso di <span class="text-gradient">abbandonare tutto</span> per <span class="text-gradient">inseguire il mio sogno</span> di diventare uno sviluppatore freelance e imprenditore</p>
+                                    <p>Ho un diploma come <span class="text-gradient">Perito Informatico specializzato in Sistemi Informativi Aziendali</span> conseguito presso l’Istituto Tecnico Commerciale della città di Rossano (CS)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="skill" class="about-content">
+                            <img src="./assets/icons/angular_braces.svg" alt="background angular braces icon">
+                            <div>
+                                <div>
+                                    <h3>Le mie skill</h3>
+                                    <div class="about-content-description">
+                                        <p>Sono uno sviluppatore <span class="text-gradient">Full-stack</span> quindi mi occupo sia di <span class="text-gradient">Front End</span> che di <span class="text-gradient">Back End</span>. Sono in grado di <span class="text-gradient">confezionare siti e applicazioni complete</span> in modo da poter gestire tutto lo sviluppo in autonomia senza dover delegare del lavoro ad altri professionisti</p>
+                                        <p>Se necessario posso anche occuparmi del design del prodotto così da accompagnarlo dalle sue fasi iniziali alla sua distribuzione, fornendo al cliente una <span class="text-gradient">comodità in più</span></p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="skill-scroll" style="--time:50s">
+                                        <div>
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>Javascript</span>
+                                            <span>Java</span>
+                                            <span>Node.js</span>
+                                            <span>Angular</span>
+                                            <span>React</span>
+                                            <span>Bootstrap</span>
+                                            <span>Swift</span>
+                                        </div>
+                                        <div>
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>Javascript</span>
+                                            <span>Java</span>
+                                            <span>Node.js</span>
+                                            <span>Angular</span>
+                                            <span>React</span>
+                                            <span>Bootstrap</span>
+                                            <span>Swift</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-scroll" style="--time:40s;">
+                                        <div>
+                                            <span>SwiftUI</span>
+                                            <span>Core Data</span>
+                                            <span>SwiftData</span>
+                                            <span>PostgreSQL</span>
+                                            <span>Python</span>
+                                            <span>Typescript</span>
+                                            <span>Sketch</span>
+                                            <span>Figma</span>
+                                            <span>Spring Boot</span>
+                                        </div>
+                                        <div>
+                                            <span>SwiftUI</span>
+                                            <span>Core Data</span>
+                                            <span>SwiftData</span>
+                                            <span>PostgreSQL</span>
+                                            <span>Python</span>
+                                            <span>Typescript</span>
+                                            <span>Sketch</span>
+                                            <span>Figma</span>
+                                            <span>Spring Boot</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="hobbies" class="about-content">
+                            <img src="./assets/icons/dumbbell.svg" alt="background dumbbell icon">
+                            <div>
+                                <h3>Le mie passioni</h3>
+                                <div class="about-content-description">
+                                    <p>Sono appassionato di <span class="text-gradient">Serie TV e Anime</span> e in generale di tutto ciò che riguarda la cultura nipponica. <em>(Si...sono un nerd)</em></p>
+                                    <p>Amo la palestra e il mondo del fitness, in particolar modo il <span class="text-gradient">Bodybuilding</span> che pratico ormai da anni ed è diventato pilastro fondamentale della mia vita</p>
+                                    <p>Nel tempo libero mi piace anche coltivare il mio hobby preferito, il <span class="text-gradient">fai-da-te</span>, infatti mi diletto nel costruire, aggiustare (e talvolta distruggere) qualsiasi cosa mi capiti a tiro</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="about-navigator" class="col-12 col-xl-1 order-1 order-xl-2 hidden right-to-left">
+                        <ul class="frosted bordered">
+                            <li><button type="button" id="first-about" class="about-button about-active" aria-label="Chi sono"><img src="./assets/icons/account.svg" alt="account man icon" ontouchstart=""></button></li>
+                            <li><button type="button" id="second-about" class="about-button" aria-label="I miei studi"><img src="./assets/icons/book.svg" alt="book icon" ontouchstart=""></button></li>
+                            <li><button type="button" id="third-about" class="about-button" aria-label="Le mie skill"><img src="./assets/icons/angular_braces.svg" alt="angular braces icon" ontouchstart=""></button></li>
+                            <li><button type="button" id="fourth-about" class="about-button" aria-label="Le mie passioni"><img src="./assets/icons/dumbbell.svg" alt="dumbbell icon" ontouchstart=""></button></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Contact section -->
+            <section id="contact">
+                <div class="section-header hidden top-to-bottom">
+                    <p><span>Contatti</span></p>
+                    <div>
+                        <h2>Contattami</h2>
+                        <p class="subheading">Vuoi collaborare, assumermi o chiedere informazioni?</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="contact-container" class="col-12 col-xl-5">
+                        <img src="./assets/icons/form.svg" alt="form icon background" class="hidden">
+                        <div id="contact-header">
+                            <h3 class="hidden left-to-right">Cosa ti serve?</h3>
+                            <div class="hidden left-to-right">
+                                <p>Hai bisogno di un sito web per <span class="text-gradient">mostrare la tua attività?</span><br>Vuoi <span class="text-gradient">vendere i tuoi prodotti online</span> e vuoi un tuo shop?<br>Hai uno studio e vuoi che i tuoi clienti possano prenotarsi sul tuo sito?</p>
+                                <p><span class="text-gradient">Sei un designer</span> che ha bisogno di uno sviluppatore? O sei un'azienda che cerca un <span class="text-gradient">aiuto esterno</span>?</p>
+                                <p><span class="text-gradient">Posso esaudire tutte le tue richieste</span></p>
+                                <p><span class="text-gradient">Compila il form</span> di seguito oppure contattami per mail o sui miei social. <span class="text-gradient">Riceverai una risposta entro 24h</span></p>
+                                <p>La prima chiacchierata e il preventivo sono <span class="text-gradient">gratuiti!</span></p>
+                            </div>
+                        </div>
+                        <div id="secondary-contact">
+                            <ul id="contact-info" class="hidden left-to-right">
+                                <li>
+                                    <a href="mailto: carmine.otranto.dev@gmail.com" ontouchstart="" aria-label="Send me an email">
+                                        <img src="./assets/icons/mail.svg" alt="mail icon" class="medium-icon">
+                                        <p>carmine.otranto.dev@gmail.com</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./assets/icons/location.svg" alt="location icon" class="medium-icon">
+                                    <p>Corigliano-Rossano, Italia</p>
+                                </li>
+                            </ul>
+                            <ul id="contact-social" class="social-links hidden left-to-right">
+                                <li><a href="https://t.me/Karmine7" target="_blank" rel="noreferrer noopener" aria-label="Link to Telegram"><img src="./assets/social/Telegram Logo.svg" alt="Telegram logo" class="icon" ontouchstart=""></a></li>
+                                <li><a href="https://www.instagram.com/carmine.otranto/" target="_blank" rel="noreferrer noopener" aria-label="Link to Instagram"><img src="./assets/social/Instagram_Glyph_Gradient.svg" alt="Instagram logo" class="icon" ontouchstart=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="form-section" class="col-12 col-xl-7 hidden">
+                        <div id="availability-indicator">
+                            <div class="available"></div>
+                            <p>Attualmente disponibile</p>
+                        </div>
+
+                        <form action="https://formcarry.com/s/JsjUzrhrQbm" autocomplete="off">
+                            <div id="first-form-step" class="encapsulated">
+                                <div id="first-step" class="field">
+                                    <label for="required-service">Di cosa hai bisogno?</label>
+                                    <select name="services" id="required-service" required>
+                                        <option disabled selected value=""> -- Seleziona un'opzione --</option>
+                                        <option value="Sito Web semplice (pagina singola)">Sito Web semplice (pagina singola)</option>
+                                        <option value="Sito Web complesso (multi-pagina)">Sito Web complesso (multi-pagina)</option>
+                                        <option value="Re-design sito Web esistente">Re-design sito Web esistente</option>
+                                        <option value="Applicazione Web">Applicazione Web</option>
+                                        <option value="App mobile (iOS / iPadOS)">App mobile (iOS / iPadOS)</option>
+                                        <option value="Collaborazione">Collaborazione</option>
+                                        <option value="Informazioni">Informazioni</option>
+                                    </select>
+                                </div>
+                                <div id="second-step" class="field" style="display: none;">
+                                    <p>Quale tipo di servizio richiedi?</p>
+                                    <div id="radio-buttons">
+                                        <label for="develoment-only" class="radio-label">
+                                            <input type="radio" name="serviceType" class="radio-input" id="develoment-only" value="Solo sviluppo">
+                                            Solo sviluppo
+                                        </label>
+                                        
+                                        <label for="design-and-development" class="radio-label">
+                                            <input type="radio" name="serviceType" class="radio-input" id="design-and-development" value="Design & Sviluppo">
+                                            Design & Sviluppo
+                                        </label>
+                                    </div>
+                                </div>
+                                <div id="third-step" class="multiple-field-step" style="display: none;">
+                                    <div class="field">
+                                        <label for="amount">Quale cifra pensi di voler spendere?</label>
+                                        <select name="amount" id="amount">
+                                            <option disabled selected value=""> -- Seleziona un'opzione --</option>
+                                            <option value="Fino a 500€">Fino a 500€</option>
+                                            <option value="500€ - 1.000€">500€ - 1.000€</option>
+                                            <option value="1.000€ - 5.000€">1.000€ - 5.000€</option>
+                                            <option value="5.000€ - 10.000€">5.000€ - 10.000€</option>
+                                            <option value="10.000€ +">10.000€ +</option>
+                                        </select>
+                                    </div>
+                                    <div class="field">
+                                        <label for="time">Quando hai bisogno che il lavoro sia completato?</label>
+                                        <select name="time" id="time">
+                                            <option disabled selected value=""> -- Seleziona un'opzione --</option>
+                                            <option value="Entro un mese">Entro un mese</option>
+                                            <option value="Da un mese a 3 mesi">Da un mese a 3 mesi</option>
+                                            <option value="Da 3 mesi a 6 mesi">Da 3 mesi a 6 mesi</option>
+                                            <option value="Più di 6 mesi">Più di 6 mesi</option>
+                                        </select>
+                                    </div>
+                                    <small>* I tempi e i costi sono da ritenersi indicativi in quanto possono subire variazioni dipendentemente dalle specifiche del progetto</small>
+                                </div>
+                                <input type="button" class="cta primary form-button" value="Avanti ->" ontouchstart=""/>
+                            </div>
+                            
+                            <div id="second-form-step" class="hidden encapsulated" style="display: none;">
+                                <div id="fourth-step" class="multiple-field-step">
+                                    <div class="field">
+                                        <label for="name">Nome completo</label>
+                                        <input type="text" id="name" name="name" value="" autocomplete="off" placeholder="es. Mario Rossi" maxlength="50">
+                                    </div>
+                                    <div class="field">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" value="" autocomplete="off" placeholder="es. mario@rossi.it" maxlength="100">
+                                    </div>
+                                        <div class="field">
+                                        <label for="note">Note <span>(opzionale)</span></label>
+                                        <textarea name="note" id="note" cols="30" rows="5" placeholder="Se vuoi descrivere brevemente la tua idea o hai qualche domanda scrivi qui..." maxlength="400"></textarea>
+                                        <small>Caratteri rimanenti: <output></output></small>
+                                    </div>
+                                </div>
+                                <div class="button-box">
+                                    <button type="button" class="cta back form-button" ontouchstart=""><- Indietro</button>
+                                    <input type="button" class="cta primary form-button" value="Riepilogo ->" ontouchstart=""/>
+                                </div>
+                            </div>
+                        
+                            <div id="summary" class="hidden encapsulated" style="display: none;">
+                                <div id="summary-content">
+                                    <div>
+                                        <h5>Servizio richiesto</h5>
+                                        <div>
+                                            <p id="service-name-summary">Servizio: <span class="text-gradient"></span></p>
+                                            <p id="service-type-summary">Tipologia: <span class="text-gradient"></span></p>
+                                            <p id="budget-summary">Budget: <span class="text-gradient"></span></p>
+                                            <p id="time-summary">Tempistiche: <span class="text-gradient"></span></p>
+                                            <div id="note-container">
+                                                <p id="note-summary">Note: <span class="text-gradient"></span></p>
+                                                <div id="note-container-content" style="display: none;">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5>Informazioni personali</h5>
+                                        <div>
+                                            <p id="name-summary">Nome: <span class="text-gradient"></span></p>
+                                            <p id="email-summary">Email: <span class="text-gradient"></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="button-box">
+                                    <button type="button" class="cta back form-button" ontouchstart=""><- Indietro</button>
+                                    <button type="submit" class="cta primary form-button" ontouchstart="">Invia messaggio<span id="send-spinner" class="spinner-border spinner-border-sm ms-2"></span></button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div id="confirmation" class="hidden encapsulated form-result" style="display: none;">
+                            <img src="./assets/icons/envelope with checkmark.svg" alt="envelope with checkmark icon">
+                            <div class="result-message">
+                                <h5><span class="text-gradient">La richiesta è stata inviata correttamente</span></h5>
+                                <div class="result-message-description">
+                                    <p><small>Ti ringrazio per avermi scelto</small></p>
+                                    <p><small>La tua richiesta verrà processata il prima possibile e riceverai una risposta a breve</small></p>
+                                </div>
+                            </div>
+                            <div class="button-box">
+                                <button type="reset" class="cta back underlined form-button" ontouchstart="">Invia un'altra richiesta</button>
+                            </div>
+                        </div>
+                        <div id="error" class="hidden encapsulated form-result" style="display: none;">
+                            <img src="./assets/icons/error.svg" alt="an envelope and a server with an x over the connection between them">
+                            <div class="result-message">
+                                <h5><span class="text-gradient">Ci sono problemi con il Server</span></h5>
+                                <div class="result-message-description">
+                                    <p><small>Purtroppo la richiesta non è stata consegnata a causa di un malfunzionamento del sistema di ricezione dei messaggi. Si prega di riprovare tra poco</small></p>
+                                    <p><small>Qualora il problema dovesse persistere si consiglia di utilizzare la mail o un sistema di contatto differente. Mi scuso per il disagio</small></p>
+                                </div>
+                            </div>
+                            <div class="button-box">
+                                <button type="button" class="cta back form-button" ontouchstart=""><- Torna al riepilogo</button>
+                                <button type="submit" class="cta primary form-button" ontouchstart="">Riprova<span id="retry-spinner" class="spinner-border spinner-border-sm ms-2"></span></button>
+                            </div>
+                        </div>
+                        <noscript>
+                            <div class="encapsulated form-result">
+                                <p>Il form per il contatto non è disponibile perché Javascript è disabilitato</p>
+                                <p>Se vuoi visualizzarlo abilita Javascript</p>
+                            </div>
+                        </noscript>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        
+    </div>
+
+    <!-- Footer -->    
+    <footer class="container-fluid">
+        <hr>
+        <div>
+            <a class="logo" href="#home" aria-label="Scroll page to Home">
+                <img src="./assets/logos/Logo.svg" alt="personal logo">
+                <p>Carmine Otranto</p>
+            </a>
+            <ul class="social-links">
+                <li><a href="https://t.me/Karmine7" target="_blank" rel="noreferrer noopener" ontouchstart="" aria-label="Link to Telegram"><img src="./assets/social/Telegram Logo.svg" alt="Telegram logo" class="small-icon"></a></li>
+                <li><a href="https://www.instagram.com/carmine.otranto/" target="_blank" rel="noreferrer noopener" ontouchstart="" aria-label="Link to Instagram"><img src="./assets/social/Instagram_Glyph_Gradient.svg" alt="Instagram logo" class="small-icon"></a></li>
+                <li><a href="mailto: carmine.otranto.dev@gmail.com" target="_blank" rel="noreferrer noopener" ontouchstart="" aria-label="Send me an email"><img src="./assets/icons/mail.svg" alt="mail logo" class="small-icon"></a></li>
+                <li><a href="https://github.com/Haswell7" target="_blank" rel="noreferrer noopener" ontouchstart="" aria-label="Link to GitHub"><img src="./assets/social/github-mark-white.svg" alt="GitHub logo" class="small-icon"></a></li>
+                <li><a href="https://www.linkedin.com/in/carmine-otranto" target="_blank" rel="noreferrer noopener" ontouchstart="" aria-label="Link to LinkedIn"><img src="./assets/social/In-White-40.png" alt="LinkedIn logo" class="small-icon"></a></li>
+            </ul>
+        </div>
+        <p><small>2024 - Progettato e Sviluppato da Carmine Otranto</small></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./scripts/index.js" charset="UTF-8"></script>
+</body>
+</html>
